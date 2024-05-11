@@ -25,7 +25,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        pip install twisted incremental  # Add this line to install missing modules
+        pip install twisted incremental click  # Add click module installation
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
